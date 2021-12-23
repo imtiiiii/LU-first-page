@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Components/Header/Header';
 
-function App() {
+const App = () => {
   return (
-    <div className="">
-      <h1>hello tailwind v3</h1>
-
+    <div>
+      <Header></Header>
     </div>
   );
-}
+};
 
 export default App;
