@@ -1,70 +1,67 @@
-import { Container } from 'postcss';
+
 import React, { useState } from 'react';
 import './Header.css'
-import { GiHamburgerMenu, GrClose } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineClose } from 'react-icons/md';
+import aboutUs, { admission, faculty, facultyMembers, studentsPortal } from './Navbar-drop-down-items/drop-down-items';
 const Header = () => {
+
     const FullNav =
         <>
-            <div className=' grid grid-cols-8 gap-5 nav-parent' style={{ backgroundColor: "#455a64", width: "100%" }} >
+            <div className=' grid grid-cols-9 gap-10 nav-parent' style={{ backgroundColor: "#455a64", width: "100%" }} >
                 <div className=''>
-                    <h1 className='text-lg  nav-bar  '>Home
-                        <div className=' h-48 drop-down ' >
-                            drop down
-                        </div>
-
+                    <h1 className='text-base  nav-bar  '>
+                        Home
                     </h1>
 
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>About us
-                        <div className=' h-48 drop-down ' >
-                            drop down
+                    <h1 className='text-base  nav-bar '>
+                        About us
+                        <div className=' h-48 drop-down  w-full' >
+                            {aboutUs}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>Admission
+                    <h1 className='text-base  nav-bar '>Admission
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {admission}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>IQAC
+                    <h1 className='text-base  nav-bar '>
+                        IQAC
+                    </h1>
+                </div>
+                <div>
+                    <h1 className='text-base  nav-bar '>Faculty Members
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {facultyMembers}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>Faculty
+                    <h1 className='text-base  nav-bar '>Faculty
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {faculty}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>Student
+                    <h1 className='text-base  nav-bar '>Student Portal
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {studentsPortal}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>Library
-                        <div className=' h-48 drop-down ' >
-                            drop down
-                        </div>
-
+                    <h1 className='text-base  nav-bar '>Library
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  nav-bar '>Login
-                        <div className=' h-48 drop-down ' style={{ width: "300px" }}>
-                            drop down
-                        </div>
-
+                    <h1 className='text-base  nav-bar '>Login
                     </h1>
                 </div>
 
@@ -77,70 +74,64 @@ const Header = () => {
 
                 <div className=''>
 
-                    <h1 className='text-lg small-nav'>Home
-                        <div className=' h-48 drop-down drop-shadow-md' >
-                            drop down
-                        </div>
-
+                    <h1 className='text-base small-nav'>
+                        Home
                     </h1>
-
                 </div>
                 <div>
-                    <h1 className='text-lg  small-nav  '>About us
+                    <h1 className='text-base  small-nav  '>About us
+                        <div className='  drop-down shadow-lg my-2 py-3' >
+                            {aboutUs}
+                        </div>
+                    </h1>
+                </div>
+                <div>
+                    <h1 className='text-base  small-nav '>Admission
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {admission}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  small-nav '>Admission
+                    <h1 className='text-base  small-nav '>
+                        IQAC
+                    </h1>
+                </div>
+                <div>
+                    <h1 className='text-base  small-nav '>Faculty Members
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {facultyMembers}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  small-nav '>IQAC
+                    <h1 className='text-base  small-nav '>Faculty
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {faculty}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  small-nav '>Faculty
+                    <h1 className='text-base small-nav  '>Student Portal
                         <div className=' h-48 drop-down ' >
-                            drop down
+                            {studentsPortal}
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg small-nav  '>Student
-                        <div className=' h-48 drop-down ' >
-                            drop down
-                        </div>
+                    <h1 className='text-base  small-nav '>Library
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-lg  small-nav '>Library
-                        <div className=' h-48 drop-down ' >
-                            drop down
-                        </div>
-
-                    </h1>
-                </div>
-                <div>
-                    <h1 className='text-lg small-nav '>Login
-                        <div className=' h-48 drop-down ' style={{ width: "300px" }}>
-                            drop down
-                        </div>
-
+                    <h1 className='text-base small-nav '>Login
                     </h1>
                 </div>
 
             </div >
         </>
+
     const [open, setOpen] = useState(false);
-    console.log(open)
+    // console.log(open)
     const handleOpenClose = () => {
         setOpen(!open);
 
@@ -156,7 +147,7 @@ const Header = () => {
 
                 </button>
             </div>
-            <div className='w-full border-2 flex justify-center' >
+            <div className='w-full  border-2' >
                 {FullNav}
                 {
                     open && SmallNav
