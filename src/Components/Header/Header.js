@@ -1,13 +1,14 @@
 import { Container } from 'postcss';
 import React, { useState } from 'react';
 import './Header.css'
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu, GrClose } from 'react-icons/gi'
+import { MdOutlineClose } from 'react-icons/md';
 const Header = () => {
     const FullNav =
         <>
             <div className=' grid grid-cols-8 gap-5 nav-parent' style={{ backgroundColor: "#455a64", width: "100%" }} >
                 <div className=''>
-                    <h1 className='text-xl  nav-bar  '>Home
+                    <h1 className='text-lg  nav-bar  '>Home
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
@@ -16,42 +17,42 @@ const Header = () => {
 
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>About us
+                    <h1 className='text-lg  nav-bar '>About us
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>Admission
+                    <h1 className='text-lg  nav-bar '>Admission
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>IQAC
+                    <h1 className='text-lg  nav-bar '>IQAC
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>Faculty
+                    <h1 className='text-lg  nav-bar '>Faculty
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>Student
+                    <h1 className='text-lg  nav-bar '>Student
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>Library
+                    <h1 className='text-lg  nav-bar '>Library
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
@@ -59,7 +60,7 @@ const Header = () => {
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  nav-bar '>Login
+                    <h1 className='text-lg  nav-bar '>Login
                         <div className=' h-48 drop-down ' style={{ width: "300px" }}>
                             drop down
                         </div>
@@ -76,7 +77,7 @@ const Header = () => {
 
                 <div className=''>
 
-                    <h1 className='text-xl small-nav'>Home
+                    <h1 className='text-lg small-nav'>Home
                         <div className=' h-48 drop-down drop-shadow-md' >
                             drop down
                         </div>
@@ -85,42 +86,42 @@ const Header = () => {
 
                 </div>
                 <div>
-                    <h1 className='text-xl  small-nav  '>About us
+                    <h1 className='text-lg  small-nav  '>About us
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  small-nav '>Admission
+                    <h1 className='text-lg  small-nav '>Admission
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  small-nav '>IQAC
+                    <h1 className='text-lg  small-nav '>IQAC
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  small-nav '>Faculty
+                    <h1 className='text-lg  small-nav '>Faculty
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl small-nav  '>Student
+                    <h1 className='text-lg small-nav  '>Student
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl  small-nav '>Library
+                    <h1 className='text-lg  small-nav '>Library
                         <div className=' h-48 drop-down ' >
                             drop down
                         </div>
@@ -128,7 +129,7 @@ const Header = () => {
                     </h1>
                 </div>
                 <div>
-                    <h1 className='text-xl small-nav '>Login
+                    <h1 className='text-lg small-nav '>Login
                         <div className=' h-48 drop-down ' style={{ width: "300px" }}>
                             drop down
                         </div>
@@ -149,7 +150,10 @@ const Header = () => {
         <>
             <div className='my-5 hamburger'>
                 <button type='button' style={{ fontSize: "20px" }} onClick={handleOpenClose}>
-                    <GiHamburgerMenu />
+                    {
+                        open ? <MdOutlineClose /> : <GiHamburgerMenu />
+                    }
+
                 </button>
             </div>
             <div className='w-full border-2 flex justify-center' >
