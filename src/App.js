@@ -3,9 +3,11 @@ import Header from './Components/Header/Header';
 
 const App = () => {
   return (
-    <div>
-      <Header></Header>
-    </div>
+    <>
+      <div>
+        <Header></Header>
+      </div>
+    </>
   );
 };
 

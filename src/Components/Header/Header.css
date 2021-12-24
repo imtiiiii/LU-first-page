@@ -5,4 +5,13 @@
 .nav-bar:hover .drop-down{
     display:block;
     
+    
 }
+.nav-bar{
+    color:white;
+}
+@media screen and (max-width: 640px) {
+    .nav-bar{
+        display: none;
+    }
+  }
