@@ -1,17 +1,32 @@
 
 .drop-down{
     display:none;
+    background-color: #455a64;
 }
 .nav-bar:hover .drop-down{
     display:block;
     
     
 }
+.small-nav:hover .drop-down{
+    display: block;
+}
 .nav-bar{
     color:white;
+    
 }
+.small-nav-parent{
+    display: none;
+    display: none;
+    color: white;
+    background-color: #455a64;
+}
+
 @media screen and (max-width: 640px) {
-    .nav-bar{
+    .nav-parent{
         display: none;
+    }
+    .small-nav-parent{
+        display: block;
     }
   }
