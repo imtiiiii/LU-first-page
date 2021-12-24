@@ -1,5 +1,5 @@
 import { Container } from 'postcss';
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 const Header = () => {
@@ -138,15 +138,27 @@ const Header = () => {
 
             </div >
         </>
+    const [open, setOpen] = useState(false);
+    console.log(open)
+    const handleOpenClose = () => {
+        setOpen(!open);
 
+    }
 
     return (
         <>
+            <div className='my-5 hamburger'>
+                <button type='button' style={{ fontSize: "20px" }} onClick={handleOpenClose}>
+                    <GiHamburgerMenu />
+                </button>
+            </div>
             <div className='w-full border-2 flex justify-center' >
                 {FullNav}
-                {SmallNav}
-
+                {
+                    open && SmallNav
+                }
             </div>
+
         </>
     );
 };

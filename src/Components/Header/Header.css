@@ -21,12 +21,18 @@
     color: white;
     background-color: #455a64;
 }
+.hamburger{
+    display: none;
+}
 
 @media screen and (max-width: 640px) {
     .nav-parent{
         display: none;
     }
     .small-nav-parent{
+        display: block;
+    }
+    .hamburger{
         display: block;
     }
   }
