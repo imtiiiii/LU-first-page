@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineClose } from 'react-icons/md';
+import { AiOutlineDown } from 'react-icons/ai';
 import aboutUs, { admission, faculty, facultyMembers, studentsPortal } from './Navbar-drop-down-items/drop-down-items';
 import logo from '../../img/lulogo.png'
 import label from '../../img/lulabelwhite.png'
@@ -18,8 +19,8 @@ const Header = () => {
 
                 </div>
                 <div>
-                    <h1 className='text-base  nav-bar '>
-                        About us
+                    <h1 className='text-base  nav-bar'>
+                        About us <AiOutlineDown />
                         <div className='drop-down  my-4' >
                             {aboutUs}
                         </div>
@@ -27,7 +28,7 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Admission
-                        <div className='drop-down ' >
+                        <div className='drop-down my-4' >
                             {admission}
                         </div>
                     </h1>
@@ -39,21 +40,21 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Faculty Members
-                        <div className='drop-down' >
+                        <div className='drop-down my-4' >
                             {facultyMembers}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Faculty
-                        <div className='48 drop-down ' >
+                        <div className=' drop-down my-4' >
                             {faculty}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Student Portal
-                        <div className='drop-down ' >
+                        <div className='drop-down my-4' >
                             {studentsPortal}
                         </div>
                     </h1>
@@ -89,7 +90,7 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  small-nav '>Admission
-                        <div className=' h-48 drop-down ' >
+                        <div className=' drop-down shadow-lg my-2 py-3 ' >
                             {admission}
                         </div>
                     </h1>
@@ -101,21 +102,21 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  small-nav '>Faculty Members
-                        <div className=' h-48 drop-down ' >
+                        <div className='drop-down shadow-lg my-2 py-3 ' >
                             {facultyMembers}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  small-nav '>Faculty
-                        <div className=' h-48 drop-down ' >
+                        <div className=' drop-down shadow-lg my-2 py-3 ' >
                             {faculty}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base small-nav  '>Student Portal
-                        <div className=' h-48 drop-down ' >
+                        <div className=' drop-down shadow-lg my-2 py-3 ' >
                             {studentsPortal}
                         </div>
                     </h1>
