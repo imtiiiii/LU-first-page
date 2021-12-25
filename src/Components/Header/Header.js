@@ -143,16 +143,16 @@ const Header = () => {
         <>
             <div className='w-full' style={{ backgroundColor: "#455a64" }}>
                 <div className='lg:w-4/5 mx-auto sm:w-full'>
-                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 mb-8  grid-cols-2 border-b border-slate-900'>
-                        <div className="lg:flex  sm:flex-column md:flex-column  lg:col-span-2  my-8 ">
-                            <div className=' w-1/4 '>
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 mb-8  grid-cols-3 border-b border-slate-900  '>
+                        <div className="lg:flex  sm:flex-column md:flex-column  lg:col-span-2  my-8  col-span-2 ">
+                            <div className=' lg:w-1/4 flex justify-center items-center'>
                                 <img src={logo} alt="logo" style={{ width: "150px" }}></img>
                             </div>
-                            <div className=' w-full flex justify-start items-center  '>
+                            <div className=' lg:w-full flex justify-start items-center  '>
                                 <img src={label} alt="label" className=' label' ></img>
                             </div>
                         </div>
-                        <div className='  hamburger lg:flex lg:justify-end  lg:items-start sm:flex sm:justify-end  sm:items-start '>
+                        <div className='  hamburger lg:flex lg:justify-end  lg:items-start sm:flex sm:justify-end  sm:items-start  '>
                             <button type='button' className='lg:pt-3 lg:mt-8' style={{ fontSize: "24px" }} onClick={handleOpenClose}>
                                 {
                                     open ? <MdOutlineClose /> : <GiHamburgerMenu />
