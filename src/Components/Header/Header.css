@@ -4,7 +4,10 @@
 }
 .drop-down{
     display:none;
-    background-color: #455a64;
+    /* background-color: #455a64; */
+}
+.drop-down:hover{
+    color:white;
 }
 .nav-bar:hover .drop-down{
     display:block;

@@ -10,7 +10,7 @@ const Header = () => {
 
     const FullNav =
         <>
-            <div className=' grid grid-cols-9 gap-10 nav-parent' style={{ backgroundColor: "#455a64", width: "100%" }} >
+            <div className=' grid grid-cols-9 gap-5 nav-parent ' style={{ backgroundColor: "", width: "100%" }} >
                 <div className=''>
                     <h1 className='text-base  nav-bar  '>
                         Home
@@ -20,14 +20,14 @@ const Header = () => {
                 <div>
                     <h1 className='text-base  nav-bar '>
                         About us
-                        <div className=' h-48 drop-down  w-full' >
+                        <div className='drop-down  my-4' >
                             {aboutUs}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Admission
-                        <div className=' h-48 drop-down ' >
+                        <div className='drop-down ' >
                             {admission}
                         </div>
                     </h1>
@@ -39,21 +39,21 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Faculty Members
-                        <div className=' h-48 drop-down ' >
+                        <div className='drop-down' >
                             {facultyMembers}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Faculty
-                        <div className=' h-48 drop-down ' >
+                        <div className='48 drop-down ' >
                             {faculty}
                         </div>
                     </h1>
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar '>Student Portal
-                        <div className=' h-48 drop-down ' >
+                        <div className='drop-down ' >
                             {studentsPortal}
                         </div>
                     </h1>
@@ -141,9 +141,9 @@ const Header = () => {
 
     return (
         <>
-            <div className='w-full' style={{ backgroundColor: "#455a64" }}>
+            <div className='w-full border-b border-slate-900 ' style={{ backgroundColor: "#455a64" }}>
                 <div className='lg:w-4/5 mx-auto sm:w-full'>
-                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 mb-8  grid-cols-3 border-b border-slate-900  '>
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2   grid-cols-3  '>
                         <div className="lg:flex  sm:flex-column md:flex-column  lg:col-span-2  my-8  col-span-2 ">
                             <div className=' lg:w-1/4 flex justify-center items-center'>
                                 <img src={logo} alt="logo" style={{ width: "150px" }}></img>
@@ -161,14 +161,21 @@ const Header = () => {
                             </button>
                         </div>
                     </div >
-                    <div className='w-full my-2 pb-3' >
-                        {FullNav}
-                        {
-                            open && SmallNav
-                        }
-                    </div>
                 </div>
             </div>
+            <div className='w-full ' style={{ backgroundColor: "#455a64" }}>
+                <div className='lg:w-4/5 mx-auto sm:w-full py-4 '>
+                    {FullNav}
+                    {
+                        open && SmallNav
+                    }
+                </div>
+
+            </div>
+
+
+
+
 
         </>
     );
