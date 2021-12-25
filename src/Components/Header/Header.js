@@ -161,7 +161,7 @@ const Header = () => {
                             </button>
                         </div>
                     </div >
-                    <div className='w-full ' >
+                    <div className='w-full my-2 pb-3' >
                         {FullNav}
                         {
                             open && SmallNav
