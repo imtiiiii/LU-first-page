@@ -1,4 +1,7 @@
-
+.label{
+    width: 450px;
+    height: 78px;
+}
 .drop-down{
     display:none;
     background-color: #455a64;
