@@ -11,8 +11,8 @@
 .small-nav:hover .drop-down{
     display: block;
 }
-.nav-bar{
-    color:white;
+.nav-parent{
+    color:rgba(255, 255, 255, 0.5);
     
 }
 .small-nav-parent{
@@ -22,7 +22,7 @@
     background-color: #455a64;
 }
 .hamburger{
-    /* display: none; */
+    display: none;
 }
 
 @media screen and (max-width: 640px) {
@@ -33,6 +33,8 @@
         display: block;
     }
     .hamburger{
-        display: block;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
     }
   }

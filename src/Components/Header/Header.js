@@ -141,29 +141,33 @@ const Header = () => {
 
     return (
         <>
-            <div className='grid lg:grid-cols-3 border-red-400 border-2'>
-                <div className="lg:flex border-2 border-red-400 col-span-2">
-                    <div className='border-2 w-1/4'>
-                        <img src={logo} alt="logo" className=' ' style={{ width: "200px" }}></img>
-                    </div>
-                    <div className='border-2 w-2/5'>
-                        <img src={label} alt="label" className=' ' ></img>
-                    </div>
-                </div>
-                <div className=' hamburger border-2'>
-                    <button type='button' style={{ fontSize: "20px" }} onClick={handleOpenClose}>
-                        {
-                            open ? <MdOutlineClose /> : <GiHamburgerMenu />
-                        }
+            <div className='w-full' style={{ backgroundColor: "#455a64" }}>
+                <div className='lg:w-4/5 mx-auto sm:w-full'>
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2 mb-8  grid-cols-2 border-b border-slate-900'>
+                        <div className="lg:flex  sm:flex-column md:flex-column  lg:col-span-2 gap-4 my-8 ">
+                            <div className=' w-1/4'>
+                                <img src={logo} alt="logo" style={{ width: "150px" }}></img>
+                            </div>
+                            <div className=' w-full flex '>
+                                <img src={label} alt="label" className='w-4/5 ' ></img>
+                            </div>
+                        </div>
+                        <div className='  hamburger lg:flex lg:justify-end  lg:items-start sm:flex sm:justify-end  sm:items-start '>
+                            <button type='button' className='lg:pt-3 lg:mt-8' style={{ fontSize: "24px" }} onClick={handleOpenClose}>
+                                {
+                                    open ? <MdOutlineClose /> : <GiHamburgerMenu />
+                                }
 
-                    </button>
+                            </button>
+                        </div>
+                    </div >
+                    <div className='w-full ' >
+                        {FullNav}
+                        {
+                            open && SmallNav
+                        }
+                    </div>
                 </div>
-            </div >
-            <div className='w-full  border-2' >
-                {FullNav}
-                {
-                    open && SmallNav
-                }
             </div>
 
         </>
