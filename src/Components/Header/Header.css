@@ -22,7 +22,7 @@
     background-color: #455a64;
 }
 .hamburger{
-    display: none;
+    /* display: none; */
 }
 
 @media screen and (max-width: 640px) {

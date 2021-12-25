@@ -4,6 +4,8 @@ import './Header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineClose } from 'react-icons/md';
 import aboutUs, { admission, faculty, facultyMembers, studentsPortal } from './Navbar-drop-down-items/drop-down-items';
+import logo from '../../img/lulogo.png'
+import label from '../../img/lulabel.png'
 const Header = () => {
 
     const FullNav =
@@ -139,14 +141,24 @@ const Header = () => {
 
     return (
         <>
-            <div className='my-5 hamburger'>
-                <button type='button' style={{ fontSize: "20px" }} onClick={handleOpenClose}>
-                    {
-                        open ? <MdOutlineClose /> : <GiHamburgerMenu />
-                    }
+            <div className='grid lg:grid-cols-3 border-red-400 border-2'>
+                <div className="lg:flex border-2 border-red-400 col-span-2">
+                    <div className='border-2 w-1/4'>
+                        <img src={logo} alt="logo" className=' ' style={{ width: "200px" }}></img>
+                    </div>
+                    <div className='border-2 w-2/5'>
+                        <img src={label} alt="label" className=' ' ></img>
+                    </div>
+                </div>
+                <div className=' hamburger border-2'>
+                    <button type='button' style={{ fontSize: "20px" }} onClick={handleOpenClose}>
+                        {
+                            open ? <MdOutlineClose /> : <GiHamburgerMenu />
+                        }
 
-                </button>
-            </div>
+                    </button>
+                </div>
+            </div >
             <div className='w-full  border-2' >
                 {FullNav}
                 {
