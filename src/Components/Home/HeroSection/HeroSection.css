@@ -1,0 +1,9 @@
+.slider{
+    width: 600px;
+}
+.carousel .thumbs {
+    display: none;
+}
+.carousel-status{
+    display: none;
+}
