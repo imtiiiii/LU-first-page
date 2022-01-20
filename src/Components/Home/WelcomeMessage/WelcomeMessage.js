@@ -6,7 +6,7 @@ const WelcomeMessage = (props) => {
     console.log(name);
     return (
         <>
-            <div className='bg-slate-100 shadow-lg m-5 p-5 '>
+            <div className='bg-[#fff] shadow-lg m-5 p-5 '>
                 <div className=' flex justify-center items-center'>
                     <img src={img} alt="person" className='rounded-full w-[120px] mt-[-40px] mb-5 '></img>
                 </div>
