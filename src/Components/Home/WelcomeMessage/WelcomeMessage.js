@@ -1,9 +1,9 @@
 import React from 'react';
 
 const WelcomeMessage = (props) => {
-    console.log(props.details)
+
     const { name, position, message, ending, img } = props.details
-    console.log(name);
+
     return (
         <>
             <div className='bg-[#fff] shadow-lg m-5 p-5 '>

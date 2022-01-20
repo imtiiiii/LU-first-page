@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from './HeroSection/HeroSection';
+import LatestNews from './LatestNews/LatestNews';
 import WelcomeMessage from './WelcomeMessage/WelcomeMessage';
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
                 <WelcomeMessage details={welcomeMessage1} />
                 <WelcomeMessage details={welcomeMessage2} />
             </div>
+            <LatestNews />
         </>
     );
 };
