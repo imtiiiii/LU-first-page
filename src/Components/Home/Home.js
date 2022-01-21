@@ -26,7 +26,7 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <>
+        <div className='bg-[#eee]'>
 
             <HeroSection></HeroSection>
             <div className='flex flex-1'>
@@ -35,7 +35,7 @@ const Home = () => {
             </div>
             <LatestNews />
             <Events />
-        </>
+        </div>
     );
 };
 
