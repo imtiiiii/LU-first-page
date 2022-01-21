@@ -23,28 +23,32 @@ const Events = () => {
     ]
     return (
         <>
-            {
-                events.map(event => {
-                    return (
-                        <section className='grid grid-cols-3'>
 
-                            <div>
-                                <img src={event.thumbnail} alt='pic'></img>
-                            </div>
+            <section className='grid grid-cols-3 gap-8'>
+                {
+                    events.map(event => {
+                        return <>
                             <div>
                                 <div>
-                                    {event.date}
+                                    <img src={event.thumbnail} alt='pic' className='w-[100%]'></img>
                                 </div>
                                 <div>
-                                    <h4>{event.name}</h4>
+                                    <div>
+                                        {event.date}
+                                    </div>
+                                    <div>
+                                        <h4>{event.name}</h4>
+                                    </div>
                                 </div>
-
                             </div>
 
-                        </section>
-                    )
-                })
-            }
+
+                        </>
+                    })
+                }
+            </section>
+
+
         </>
     );
 };
