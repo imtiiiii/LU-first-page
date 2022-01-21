@@ -1,4 +1,5 @@
 import React from 'react';
+import Events from './Events/Events';
 import HeroSection from './HeroSection/HeroSection';
 import LatestNews from './LatestNews/LatestNews';
 import WelcomeMessage from './WelcomeMessage/WelcomeMessage';
@@ -33,6 +34,7 @@ const Home = () => {
                 <WelcomeMessage details={welcomeMessage2} />
             </div>
             <LatestNews />
+            <Events />
         </>
     );
 };
