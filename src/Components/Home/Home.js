@@ -1,5 +1,7 @@
 import React from 'react';
+import Affiliations from './Affiliations/Affiliations';
 import Events from './Events/Events';
+import Facilities from './Facilities/Facilities';
 import HeroSection from './HeroSection/HeroSection';
 import LatestNews from './LatestNews/LatestNews';
 import WelcomeMessage from './WelcomeMessage/WelcomeMessage';
@@ -35,6 +37,8 @@ const Home = () => {
             </div>
             <LatestNews />
             <Events />
+            <Facilities />
+            <Affiliations />
         </div>
     );
 };
