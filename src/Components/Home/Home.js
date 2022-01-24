@@ -4,6 +4,7 @@ import Events from './Events/Events';
 import Facilities from './Facilities/Facilities';
 import HeroSection from './HeroSection/HeroSection';
 import LatestNews from './LatestNews/LatestNews';
+import SidePart from './SidePart/SidePart';
 import WelcomeMessage from './WelcomeMessage/WelcomeMessage';
 
 const Home = () => {
@@ -29,13 +30,16 @@ const Home = () => {
     }
     return (
         <div className='bg-[#eee]'>
-
-            <HeroSection></HeroSection>
-            <div className='flex flex-1'>
-                <WelcomeMessage details={welcomeMessage1} />
-                <WelcomeMessage details={welcomeMessage2} />
+            {/* page divider */}
+            <div>
+                <HeroSection></HeroSection>
+                <div className='flex flex-1'>
+                    <WelcomeMessage details={welcomeMessage1} />
+                    <WelcomeMessage details={welcomeMessage2} />
+                </div>
+                <LatestNews />
+                <SidePart />
             </div>
-            <LatestNews />
             <Events />
             <Facilities />
             <Affiliations />
