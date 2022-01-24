@@ -1,6 +1,18 @@
 import React from 'react';
 import circular from '../../../img/Circular-page-001.jpg'
 const SidePart = () => {
+    const deperments = [
+        " Department of Business Administration",
+        "Department of CSE",
+        "Department of English",
+        "Department of Architecture",
+        "Department of Law",
+        "Department of Civil Engineering",
+        "Department of EEE",
+        "Department of Islamic Studies",
+        "Department of Public Health",
+        "Department of Tourism and Hospitality Management"
+    ]
     return (
         <>
             <div className='bg-[#c3d136]'>
@@ -44,6 +56,9 @@ const SidePart = () => {
                 <h4>Instagrram</h4>
                 {/* logo here */}
                 <p>Leading University, Sylhet</p>
+            </div>
+            <div>
+                {/* department will be placed here */}
             </div>
         </>
     );
