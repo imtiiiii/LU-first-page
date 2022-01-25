@@ -32,14 +32,18 @@ const LatestNews = () => {
     ];
     console.log(allNews.length);
     return (
-        <>
-            <section className='bg-[#fff] p-5'>
-                <h1>Latest news</h1>
+        <section className='my-5'>
+            <h1 className='text-3xl text-[#455a64] my-5'>Latest news</h1>
+            <div className='bg-[#fff] p-5'>
                 {
                     allNews.map(news => <News news={news} key={news.title} ></News>)
                 }
-            </section>
-        </>
+
+                <div className='flex justify-end items-center my-3'>
+                    <button type='button' className='border-2 border-solid bg-[#c3d136] text-[#fff] text-md px-3 py-1 rounded-[5px] '>NEWS ARCHIEVE </button>
+                </div>
+            </div>
+        </section>
     );
 };
 
