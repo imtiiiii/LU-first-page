@@ -33,10 +33,11 @@ const Home = () => {
             {/* page divider */}
             <div className='flex w-9/12 mx-auto border-2'>
                 {/* first part */}
-                <div className='basis-[60%]'>
+                <div className='basis-[60%] m-8'>
                     <HeroSection></HeroSection>
                     <div className='flex flex-1'>
                         <WelcomeMessage details={welcomeMessage1} />
+                        <div className='mx-4'></div>
                         <WelcomeMessage details={welcomeMessage2} />
                     </div>
                     <LatestNews />
