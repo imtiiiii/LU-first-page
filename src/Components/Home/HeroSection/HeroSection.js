@@ -16,7 +16,6 @@ const HeroSection = () => {
                 </div>
                 <div>
                     <img src={img2} className="slider-img" alt="slider" />
-
                 </div>
                 <div>
                     <img src={img3} className="slider-img" alt="slider" />

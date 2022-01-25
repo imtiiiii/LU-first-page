@@ -30,12 +30,15 @@ const LatestNews = () => {
         },
 
     ];
-
+    console.log(allNews.length);
     return (
         <>
-            {
-                allNews.map(news => <News news={news} key={news.title} ></News>)
-            }
+            <section className='bg-[#fff] p-5'>
+                <h1>Latest news</h1>
+                {
+                    allNews.map(news => <News news={news} key={news.title} ></News>)
+                }
+            </section>
         </>
     );
 };
