@@ -31,14 +31,19 @@ const Home = () => {
     return (
         <div className='bg-[#eee]'>
             {/* page divider */}
-            <div>
-                <HeroSection></HeroSection>
-                <div className='flex flex-1'>
-                    <WelcomeMessage details={welcomeMessage1} />
-                    <WelcomeMessage details={welcomeMessage2} />
+            <div className='flex w-9/12 mx-auto border-2'>
+                {/* first part */}
+                <div className='basis-[60%]'>
+                    <HeroSection></HeroSection>
+                    <div className='flex flex-1'>
+                        <WelcomeMessage details={welcomeMessage1} />
+                        <WelcomeMessage details={welcomeMessage2} />
+                    </div>
+                    <LatestNews />
                 </div>
-                <LatestNews />
-                <SidePart />
+                <div className='basis-[40%]'>
+                    <SidePart />
+                </div>
             </div>
             <Events />
             <Facilities />
