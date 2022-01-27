@@ -24,20 +24,20 @@ const Events = () => {
     return (
         <>
 
-            <section className='grid grid-cols-3 gap-8'>
+            <section className='grid grid-cols-3 gap-4 ' >
                 {
                     events.map(event => {
                         return <>
-                            <div>
-                                <div>
-                                    <img src={event.thumbnail} alt='pic' className='w-[100%]'></img>
+                            <div className='bg-[#fff] ' >
+                                <div >
+                                    <img src={event.thumbnail} alt='pic' className='w-[100%] h-[300px]'></img>
                                 </div>
                                 <div>
-                                    <div>
-                                        {event.date}
+                                    <div className='bg-[#c3d136] w-[40%] py-5 px-3' style={{ position: "relative", bottom: "60px" }}>
+                                        <h1 className='text-lg text-[#fff] font-semibold'> {event.date}</h1>
                                     </div>
-                                    <div>
-                                        <h4>{event.name}</h4>
+                                    <div className='pb-4' >
+                                        <h4 className='text-[#c3d136] text-xl pl-4'>{event.name}</h4>
                                     </div>
                                 </div>
                             </div>

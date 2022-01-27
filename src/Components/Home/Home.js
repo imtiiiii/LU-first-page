@@ -29,7 +29,9 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <div className='bg-[#eee]'>
+        <div className='bg-[#eee]' style={{
+            position: "absolute"
+        }}>
             {/* page divider */}
             <div className='flex w-9/12 mx-auto border-2'>
                 {/* first part */}
@@ -46,7 +48,9 @@ const Home = () => {
                     <SidePart />
                 </div>
             </div>
+
             <Events />
+
             <Facilities />
             <Affiliations />
         </div>
