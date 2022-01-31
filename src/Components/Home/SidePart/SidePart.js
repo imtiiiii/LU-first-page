@@ -33,7 +33,7 @@ const SidePart = () => {
                 <h3 className='text-2xl text-[#c3d136] mb-4'>Forms and Downloads</h3>
                 <p className='text-base font-medium'>Click here</p>
             </div>
-            <div className='bg-[#fff]'>
+            <div className='bg-[#fff] hello'>
                 <h1 className='text-2xl text-[#c3d136] mb-4'>Notice Board</h1>
                 <div className='flex '>
                     <div><h6>19 <br /> Jan</h6></div>
