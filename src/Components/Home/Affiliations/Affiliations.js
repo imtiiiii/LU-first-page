@@ -15,22 +15,46 @@ const Affiliations = () => {
     const img12 = "https://www.lus.ac.bd/wp-content/uploads/2015/06/brand-80x100.gif";
     return (
         <section className='bg-[#fff] my-5' >
-            <div className='grid grid-cols-6 gap-4 my-4 py-3'>
-                <img src={img1} alt="affilations" />
-                <img src={img2} alt="affilations" />
-                <img src={img3} alt="affilations" />
-                <img src={img4} alt="affilations" />
-                <img src={img5} alt="affilations" />
-                <img src={img6} alt="affilations" />
+            <div className='grid grid-cols-6 gap-4 my-8 py-3 mx-auto'>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img1} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img2} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img3} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img4} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img5} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img6} alt="affilations" />
+                </div>
             </div>
             <hr></hr>
-            <div className='grid grid-cols-6 gap-4 my-4 py-3 '>
-                <img src={img7} alt="affilations" />
-                <img src={img8} alt="affilations" />
-                <img src={img9} alt="affilations" />
-                <img src={img10} alt="affilations" />
-                <img src={img11} alt="affilations" />
-                <img src={img12} alt="affilations" />
+            <div className='grid grid-cols-6 gap-4 my-8 py-3 mx-auto'>
+                <div className=' flex justify-center content-center'>
+                    <img className='w-[100px]' src={img7} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img8} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img9} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img10} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img11} alt="affilations" />
+                </div>
+                <div className=' flex justify-center content-center' >
+                    <img className='w-[100px]' src={img12} alt="affilations" />
+                </div>
             </div>
 
         </section>
