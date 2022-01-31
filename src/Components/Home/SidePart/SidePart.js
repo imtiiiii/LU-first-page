@@ -21,35 +21,42 @@ const SidePart = () => {
             <div>
                 <img src={circular} alt="circular" />
             </div>
-            <div className='bg-[#fff] my-7 '>
+            <div className='bg-[#fff] my-7 p-4 shadow-mg'>
                 <h3 className='text-2xl text-[#c3d136] mb-4'>Forms and Downloads</h3>
                 <p className='text-base font-medium'>Click here</p>
             </div>
-            <div className='bg-[#fff] my-7'>
+            <div className='bg-[#fff] my-7 p-4 shadow-mg'>
                 <h3 className='text-2xl text-[#c3d136] mb-4'>Contact</h3>
                 <p className='text-base font-medium'>Click here</p>
             </div>
-            <div className='bg-[#fff] my-7'>
+            <div className='bg-[#fff] my-7 p-4 shadow-mg'>
                 <h3 className='text-2xl text-[#c3d136] mb-4'>Forms and Downloads</h3>
                 <p className='text-base font-medium'>Click here</p>
             </div>
-            <div className='bg-[#fff]'>
-                <h1 className='text-2xl text-[#c3d136] mb-4'>Notice Board</h1>
-                <div className='flex '>
-                    <div><h6>19 <br /> Jan</h6></div>
-                    <div><p>Notice for Re-registration for Vac Certificate</p></div>
+            <div className='bg-[#fff] py-2 px-6 shadow-mg'>
+                <h1 className='text-2xl text-[#c3d136] mb-8'>Notice Board</h1>
+                <div className=' flex gap-4 mb-6'>
+                    <div className=" font-bold ">
+                        <h6>19 <br /> Jan</h6>
+                    </div>
+                    <div className='  '>
+                        <h1>Notice for Re-registration for Vac Certificate</h1>
+                    </div>
                 </div>
-                <div className='flex bg-[#fff]'>
-                    <div><h6>13 <br /> Jan</h6></div>
+                <div className='flex gap-4 mb-6'>
+                    <div className=" font-bold "><h6>13 <br /> Jan</h6></div>
                     <div><p>Notice </p></div>
                 </div>
-                <div className='flex bg-[#fff]'>
-                    <div><h6>13 <br /> Jan</h6></div>
+                <div className='flex gap-4 mb-6'>
+                    <div className=" font-bold "><h6>13 <br /> Jan</h6></div>
                     <div><p>Notice</p></div>
                 </div>
-                <div className='flex bg-[#fff]'>
-                    <div><h6>9 <br /> Jan</h6></div>
+                <div className='flex gap-4 mb-6'>
+                    <div className=" font-bold "><h6>9 <br /> Jan</h6></div>
                     <div><p>Regarding Final Make-Up Exam of Summer-2021</p></div>
+                </div>
+                <div className='flex justify-end'>
+                    <h1>Archive</h1>
                 </div>
             </div>
             <div>
