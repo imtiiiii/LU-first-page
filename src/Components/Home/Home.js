@@ -32,27 +32,29 @@ const Home = () => {
         <div className='bg-[#eee]' style={{
             position: "absolute"
         }}>
-            {/* page divider */}
-            <div className='flex w-9/12 mx-auto border-2'>
-                {/* first part */}
-                <div className='basis-[60%] m-8'>
-                    <HeroSection></HeroSection>
-                    <div className='flex flex-1'>
-                        <WelcomeMessage details={welcomeMessage1} />
-                        <div className='mx-4'></div>
-                        <WelcomeMessage details={welcomeMessage2} />
+            <div className='w-9/12 mx-auto border-2'>
+                {/* page divider */}
+                <div className='flex '>
+                    {/* first part */}
+                    <div className='basis-[60%] m-8'>
+                        <HeroSection></HeroSection>
+                        <div className='flex flex-1'>
+                            <WelcomeMessage details={welcomeMessage1} />
+                            <div className='mx-4'></div>
+                            <WelcomeMessage details={welcomeMessage2} />
+                        </div>
+                        <LatestNews />
                     </div>
-                    <LatestNews />
+                    <div className='basis-[40%]'>
+                        <SidePart />
+                    </div>
                 </div>
-                <div className='basis-[40%]'>
-                    <SidePart />
-                </div>
+
+                <Events />
+
+                <Facilities />
+                <Affiliations />
             </div>
-
-            <Events />
-
-            <Facilities />
-            <Affiliations />
         </div>
     );
 };

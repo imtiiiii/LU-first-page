@@ -33,7 +33,7 @@ const Events = () => {
                                     <img src={event.thumbnail} alt='pic' className='w-[100%] h-[300px]'></img>
                                 </div>
                                 <div>
-                                    <div className='bg-[#c3d136] w-[40%] py-5 px-3' style={{ position: "relative", bottom: "60px" }}>
+                                    <div className='bg-[#c3d136] w-[50%] py-5 px-3' style={{ position: "relative", bottom: "60px" }}>
                                         <h1 className='text-lg text-[#fff] font-semibold'> {event.date}</h1>
                                     </div>
                                     <div className='pb-4' >
