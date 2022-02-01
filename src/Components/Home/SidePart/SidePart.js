@@ -1,5 +1,6 @@
 import React from 'react';
 import circular from '../../../img/Circular-page-001.jpg'
+import instaLogo from '../../../img/instagram.png'
 const SidePart = () => {
     const deperments = [
         " Department of Business Administration",
@@ -59,10 +60,11 @@ const SidePart = () => {
                     <h1>Archive</h1>
                 </div>
             </div>
-            <div>
-                <h4>Instagrram</h4>
+            <div className='my-7 bg-[#fff] p-4'>
+                <h4 className='text-[#c3d136] text-2xl'>Instagrram</h4>
+                <img className='w-[100px] h-[100px] my-5' src={instaLogo} alt="logo" />
                 {/* logo here */}
-                <p>Leading University, Sylhet</p>
+                <p className='font-semibold'>Leading University, Sylhet</p>
             </div>
             <div>
                 {/* department will be placed here */}
