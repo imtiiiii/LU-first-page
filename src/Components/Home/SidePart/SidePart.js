@@ -2,8 +2,9 @@ import React from 'react';
 import circular from '../../../img/Circular-page-001.jpg'
 import instaLogo from '../../../img/instagram.png'
 const SidePart = () => {
+    let flag = 0;
     const deperments = [
-        " Department of Business Administration",
+        "Department of Business Administration",
         "Department of CSE",
         "Department of English",
         "Department of Architecture",
@@ -68,9 +69,23 @@ const SidePart = () => {
             </div>
             <div>
                 {/* department will be placed here */}
+                {
+                    deperments.map(element => {
+                        return <div
+                            className={`p-4 hover:bg-[#c3d136] text-[#455a64] hover:text-[#fff] ${flag++ % 2 === 0 ? "bg-[#e3e3e3]" : "bg-[#fff]"}`}
+
+                        >
+
+                            <h1 className='text-xl  font-medium '> {element} </h1>
+                        </div>
+
+                    }
+                    )
+                }
             </div>
         </>
     );
 };
 
 export default SidePart;
+// {flag++ % 2 === 0 ? "bg-[#e3e3e3]" : "bg-[#fff]"}
