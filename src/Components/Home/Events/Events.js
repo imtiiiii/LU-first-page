@@ -31,15 +31,15 @@ const Events = () => {
                     {
                         events.map(event => {
                             return <>
-                                <div className='bg-[#fff] ' >
+                                <div className='bg-[#fff]  ' style={{ position: "relative" }} >
                                     <div >
                                         <img src={event.thumbnail} alt='pic' className='w-[100%] h-[300px]'></img>
                                     </div>
                                     <div>
-                                        <div className='bg-[#c3d136] w-[50%] py-5 px-3' style={{ position: "relative", bottom: "60px" }}>
+                                        <div className='bg-[#c3d136] w-[50%] py-5 px-3 ' style={{ position: "absolute", bottom: "80px" }}>
                                             <h1 className='text-lg text-[#fff] font-semibold'> {event.date}</h1>
                                         </div>
-                                        <div className='pb-4' >
+                                        <div className='pb-4 mt-16' >
                                             <h4 className='text-[#c3d136] text-xl pl-4'>{event.name}</h4>
                                         </div>
                                     </div>
