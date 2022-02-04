@@ -29,9 +29,7 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <div className='bg-[#eee]' style={{
-            position: "absolute"
-        }}>
+        <div className='bg-[#eee]'>
             <div className='w-9/12 mx-auto border-2'>
                 {/* page divider */}
                 <div className='flex '>
