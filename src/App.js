@@ -6,7 +6,7 @@ import Home from './Components/Home/Home';
 const App = () => {
   return (
     <>
-      <div>
+      <div className='bg-[#eee]'>
         <Header></Header>
         <Home></Home>
         <Footer></Footer>
