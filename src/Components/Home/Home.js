@@ -29,21 +29,21 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <div className=' border-2 border-[red] mb-16'>
-            <div className='w-9/12 mx-auto border-2'>
+        <div className=' border-2 border-[red] '>
+            <div className='w-[60%] mx-auto border-2 border-4 border-[green] my-8 '>
                 {/* page divider */}
                 <div className='flex '>
                     {/* first part */}
-                    <div className='basis-[60%] m-8'>
+                    <div className='basis-[60%] mx-4'>
                         <HeroSection></HeroSection>
-                        <div className='flex flex-1'>
+                        <div className='flex'>
                             <WelcomeMessage details={welcomeMessage1} />
                             <div className='mx-4'></div>
                             <WelcomeMessage details={welcomeMessage2} />
                         </div>
                         <LatestNews />
                     </div>
-                    <div className='basis-[40%]'>
+                    <div className='basis-[40%] mr-4'>
                         <SidePart />
                     </div>
                 </div>
