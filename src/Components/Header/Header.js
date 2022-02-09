@@ -20,7 +20,8 @@ const Header = () => {
                 </div>
                 <div>
                     <h1 className='text-base  nav-bar'>
-                        About us <AiOutlineDown />
+                        About us
+                        {/* <AiOutlineDown /> */}
                         <div className='drop-down  my-4' >
                             {aboutUs}
                         </div>

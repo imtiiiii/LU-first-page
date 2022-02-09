@@ -6,8 +6,8 @@ const News = (props) => {
         <>
 
             <div className='flex my-8'>
-                <div className=' mx-5 w-[40%] '>
-                    <img src={thumbnail} alt="thumbnail" className='max-w-full h-[250px]' />
+                <div className=' mx-5 w-[30%] '>
+                    <img src={thumbnail} alt="thumbnail" className='max-w-full h-[200px]' />
                 </div>
                 <div className=' w-[60%] ml-3 '>
                     <h3 className='text-[#c3d136] text-lg  mb-2'>{title}</h3>
