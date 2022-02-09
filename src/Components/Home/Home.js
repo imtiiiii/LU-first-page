@@ -30,11 +30,11 @@ const Home = () => {
     }
     return (
         <div className=''>
-            <div className='w-[60%] mx-auto  my-8  '>
+            <div className='w-[65%] mx-auto  my-8  '>
                 {/* page divider */}
                 <div className='flex mx-4'>
                     {/* first part */}
-                    <div className='basis-[60%] mr-4'>
+                    <div className='basis-[70%] mr-3'>
                         <HeroSection></HeroSection>
                         <div className='flex'>
                             <WelcomeMessage details={welcomeMessage1} />
@@ -43,7 +43,7 @@ const Home = () => {
                         </div>
                         <LatestNews />
                     </div>
-                    <div className='basis-[40%] ml-3'>
+                    <div className='basis-[30%] ml-2'>
                         <SidePart />
                     </div>
                 </div>
