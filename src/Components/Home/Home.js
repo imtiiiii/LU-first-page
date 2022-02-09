@@ -29,12 +29,12 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <div className=' border-2 border-[red] '>
-            <div className='w-[60%] mx-auto border-2 border-4 border-[green] my-8 '>
+        <div className=' border-2 border-[red]  '>
+            <div className='w-[60%] mx-auto border-2 border-4 border-[green] my-8  '>
                 {/* page divider */}
-                <div className='flex '>
+                <div className='flex mx-4'>
                     {/* first part */}
-                    <div className='basis-[60%] mx-4'>
+                    <div className='basis-[60%] '>
                         <HeroSection></HeroSection>
                         <div className='flex'>
                             <WelcomeMessage details={welcomeMessage1} />
@@ -48,10 +48,11 @@ const Home = () => {
                     </div>
                 </div>
 
-                <Events />
-
-                <Facilities />
-                <Affiliations />
+                <div className='mx-4'>
+                    <Events />
+                    <Facilities />
+                    <Affiliations />
+                </div>
             </div>
         </div>
     );

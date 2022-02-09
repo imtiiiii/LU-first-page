@@ -32,7 +32,7 @@ const LatestNews = () => {
     ];
     console.log(allNews.length);
     return (
-        <section className='my-5'>
+        <section className='my-20 '>
             <h1 className='text-3xl text-[#455a64] my-5'>Latest news</h1>
             <div className='bg-[#fff] p-5'>
                 {
