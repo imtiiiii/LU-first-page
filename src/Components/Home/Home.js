@@ -30,7 +30,7 @@ const Home = () => {
     }
     return (
         <div className=' w-[100%]'>
-            <div className='md:w-[65%] md:mx-auto  md:my-8  sm:w-[100%] md:border-2'>
+            <div className='md:w-[65%] md:mx-auto mx-4 my-8 md:my-8  sm:w-[100%] md:border-2'>
                 {/* page divider */}
                 {/* md:flex md:mx-4 sm:flex sm:flex-col */}
                 <div className='md:flex md:mx-4 sm:flex'>

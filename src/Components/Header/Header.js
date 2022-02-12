@@ -11,7 +11,7 @@ const Header = () => {
 
     const FullNav =
         <>
-            <div className=' grid grid-cols-9 gap-5 nav-parent ' style={{ backgroundColor: "", width: "100%" }} >
+            <div className=' grid grid-cols-9 gap-5 nav-parent border-2 border-[red] ' style={{ backgroundColor: "", width: "100%" }} >
                 <div className=''>
                     <h1 className='text-base  nav-bar  '>
                         Home

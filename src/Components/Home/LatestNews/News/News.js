@@ -5,11 +5,11 @@ const News = (props) => {
     return (
         <>
 
-            <div className='flex my-8'>
-                <div className=' mx-5 w-[30%] '>
+            <div className='flex flex-col my-8 md:flex md:flex-row'>
+                <div className=' md:mx-5 md:my-0 my-4 md:w-[30%]  md:block flex items-center justify-center '>
                     <img src={thumbnail} alt="thumbnail" className='max-w-full h-[200px]' />
                 </div>
-                <div className=' w-[60%] ml-3 '>
+                <div className=' md:w-[60%] w-[100%] ml-3 text-center md:text-left'>
                     <h3 className='text-[#c3d136] text-lg  mb-2'>{title}</h3>
                     <p className='text-base'>{details}</p>
 
