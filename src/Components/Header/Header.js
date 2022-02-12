@@ -11,7 +11,7 @@ const Header = () => {
 
     const FullNav =
         <>
-            <div className=' grid grid-cols-9 gap-5 nav-parent border-2 border-[red] ' style={{ backgroundColor: "", width: "100%" }} >
+            <div className=' grid grid-cols-9 gap-5 nav-parent  ' style={{ backgroundColor: "", width: "100%" }} >
                 <div className=''>
                     <h1 className='text-base  nav-bar  '>
                         Home
@@ -144,8 +144,8 @@ const Header = () => {
     return (
         <>
             <div className='w-full border-b border-slate-900 ' style={{ backgroundColor: "#455a64" }}>
-                <div className='lg:w-4/5 mx-auto sm:w-full'>
-                    <div className='grid lg:grid-cols-3 sm:grid-cols-2   grid-cols-3  '>
+                <div className='lg:w-4/5 mx-auto sm:w-full ' >
+                    <div className='grid lg:grid-cols-3 sm:grid-cols-2   grid-cols-3   '>
                         <div className="lg:flex  sm:flex-column md:flex-column  lg:col-span-2  my-8  col-span-2 ">
                             <div className=' lg:w-1/4 flex justify-center items-center'>
                                 <img src={logo} alt="logo" style={{ width: "150px" }}></img>
@@ -165,7 +165,7 @@ const Header = () => {
                     </div >
                 </div>
             </div>
-            <div className='w-full ' style={{ backgroundColor: "#455a64" }}>
+            <div className='w-full  ' style={{ backgroundColor: "#455a64" }}>
                 <div className='lg:w-4/5 mx-auto sm:w-full py-4 '>
                     {FullNav}
                     {
