@@ -30,7 +30,7 @@ const Facilities = () => {
     return (
         <section className='my-5'>
             <h1 className='text-3xl text-[#455a64] my-5'>Campus Facilities</h1>
-            <div className='grid grid-cols-3 gap-8  my-8 py-3 '>
+            <div className='grid md:grid-cols-3 gap-8  my-8 py-3  sm:grid-cols-1 '>
 
                 {
                     facilities.map(facility => {

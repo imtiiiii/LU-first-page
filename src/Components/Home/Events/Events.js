@@ -26,7 +26,7 @@ const Events = () => {
 
             <section className='my-12 ' >
                 <h1 className='text-3xl text-[#455a64] my-5'>Events</h1>
-                <div className='grid grid-cols-3 gap-4 '>
+                <div className='grid md:grid-cols-3 gap-4 sm:grid-cols-1 '>
 
                     {
                         events.map(event => {

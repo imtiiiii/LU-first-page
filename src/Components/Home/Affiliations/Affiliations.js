@@ -17,7 +17,7 @@ const Affiliations = () => {
         <section className='my-5' >
             <h1 className='text-3xl text-[#455a64] my-5'>Affiliations</h1>
             <div className='bg-[#fff]'>
-                <div className='grid grid-cols-6 gap-4 my-8 py-3 mx-auto'>
+                <div className='grid md:grid-cols-6 gap-4 my-8 py-3 md:mx-auto'>
                     <div className=' flex justify-center content-center'>
                         <img className='w-[100px]' src={img1} alt="affilations" />
                     </div>
@@ -38,7 +38,7 @@ const Affiliations = () => {
                     </div>
                 </div>
                 <hr></hr>
-                <div className='grid grid-cols-6 gap-4 my-8 py-3 mx-auto'>
+                <div className='grid md:grid-cols-6 gap-4 my-8 py-3 md:mx-auto'>
                     <div className=' flex justify-center content-center'>
                         <img className='w-[100px]' src={img7} alt="affilations" />
                     </div>
