@@ -37,7 +37,7 @@ const Home = () => {
                     {/* first part */}
                     <div className='basis-[70%] mr-3'>
                         <HeroSection></HeroSection>
-                        <div className='flex'>
+                        <div className='flex md:flex md:flex-row flex-col '>
                             <WelcomeMessage details={welcomeMessage1} />
                             <div className='mx-4'></div>
                             <WelcomeMessage details={welcomeMessage2} />

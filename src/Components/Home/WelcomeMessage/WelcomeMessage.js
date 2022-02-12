@@ -6,7 +6,7 @@ const WelcomeMessage = (props) => {
 
     return (
         <>
-            <div className='bg-[#fff] shadow-lg basis-[50%] p-4'>
+            <div className='bg-[#fff] shadow-lg basis-[50%] p-4 md:my-0 my-7'>
                 <div className=' flex justify-center items-center'>
                     <img src={img} alt="person" className='rounded-full w-[120px] mt-[-40px] mb-5 '></img>
                 </div>
