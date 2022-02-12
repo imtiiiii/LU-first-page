@@ -32,7 +32,7 @@ const Home = () => {
         <div className='border-2 border-[red] w-[100%]'>
             <div className='md:w-[65%] md:mx-auto  md:my-8 border-4 border-[green] sm:w-[100%] '>
                 {/* page divider */}
-                <div className='flex mx-4'>
+                <div className='md:flex md:mx-4 sm:flex sm:flex-col'>
                     {/* first part */}
                     <div className='basis-[70%] mr-3'>
                         <HeroSection></HeroSection>
