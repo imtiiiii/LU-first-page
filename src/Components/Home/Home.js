@@ -29,8 +29,8 @@ const Home = () => {
         img: "https://www.lus.ac.bd/wp-content/uploads/2021/03/Qazi-Azizul-Mowla.jpg"
     }
     return (
-        <div className=''>
-            <div className='w-[65%] mx-auto  my-8  '>
+        <div className='border-2 border-[red] w-[100%]'>
+            <div className='md:w-[65%] md:mx-auto  md:my-8 border-4 border-[green] sm:w-[100%] '>
                 {/* page divider */}
                 <div className='flex mx-4'>
                     {/* first part */}
